@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>RESULT</title>
+</head>
+<style>
+body
+{   
+  background-image: url({{url_for('static',filename='img/g.jpg')}});
+ color: white;
+ border: 60px solid #0f7e9b;
+ font-family:monospace;
+ }
+ h2{
+background-color: #92d7ef;
+    border: 6px solid #0f7e9b;
+    opacity: 80%;
+    font-size:15px;
+   margin-left :60px; 
+   border-radius: 10px;
+   height: 60px;
+   width: 800px;
+   font-size:25px;
+     font-style:italic;
+     color: black;
+}
+ h1
+ {
+     font-size:30px;
+ }
+
+ h3
+ {
+     font-size:20px;
+ }
+ .btn
+ {
+	border: 0;
+	background: #34495e;
+	color:white;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+  font-weight: bold;
+}
+.btn:hover{
+	background: #2980b9;
+}
+</style>
+    <body>
+        <center>
+        <br><br><br><h1>ALGORITHM PREDICTION</h1><br><br><br>
+        {% if data == 0 %}
+        <h2>No Myocardial Infarction detected in the ECG readings<br>Target value 0</h2>
+
+        {% else %}
+        <h2>Myocardial Infarction detected in the ECG readings<br>Target value 1</h2>
+
+        {% endif %}
+        <br><br><h3>Prediction is 92.1% accurate</h3>
+        <br><br><br>
+        
+        <form  action="/exit">
+        <input class="btn" type="Submit" value="Go Back">
+        </form>
+        <br>
+        <form class="exit" action="/go">
+            <input class="btn" type="Submit" value="LogOut">
+        </form>
+        
+    </center>
+    </body>
+</html>

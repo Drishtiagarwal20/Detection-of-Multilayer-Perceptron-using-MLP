@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>WELCOME</title>
+    <script>
+        var s=0;
+        function displaysec()
+        {
+            s=s+1;
+            document.getElementById("display").innerText="Page will be loaded in "+s+" second..";
+        }
+        setInterval(displaysec,1000);
+
+        function redirect()
+        {
+            window.location="/go";
+        }
+        setTimeout(redirect,5000);
+    </script>
+    <style>
+body {
+    color:black;
+    background:white;
+    font-family:cursive;
+
+}
+        
+.logo {
+    background: black;
+    border: 5px solid darkslategrey;
+    border-radius: 100%;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Please wait</h1><br>
+        <div ><img class="logo" src="{{url_for('static',filename='img/ecgsignal.gif')}}" height="400" width="400"></div>	
+    <div id="display"></div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WELCOME</title>
+</head>
+<style>
+body {
+  background-image:url({{url_for('static',filename='img/im.jpg')}});
+ color: white;
+ font-family:monospace;
+ font-size:19px;
+ }
+.contact
+{
+background-color: #92d7ef;
+    border: 6px solid #0f7e9b;
+    opacity: 70%;
+    font-size:14px;
+   margin-left :60px; 
+   border-radius: 10px;
+   height: 535px;
+   width: 380px;
+}
+.btn{
+	border: 0;
+	background: #34495e;
+	color:white;
+	padding: 12px 50px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: 0.5s;
+  font-weight: bold;
+  font-size: 11px;
+}
+.btn:hover{
+	background: #2980b9;
+}
+
+.btns{
+	border: 0;
+	background: #34495e;
+	color:white;
+	padding: 12px 30px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: 0.5s;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.btns:hover{
+	background: #2980b9;
+}
+.exit{
+  margin-left: 1170px;
+}
+.space
+{
+  margin-left: 140px;
+}
+
+</style>
+  <body> 
+    
+      <center><h2>DETECTION OF MYOCARDIAL INFARCTION</h2></center>
+      <form autocomplete="on"  class="contact" method="POST" action="{{url_for('home')}}">
+        <center><h2>Enter 12 lead values(in mv)</h2></center>
+        <b>
+          <center> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient Name&nbsp;<input type="text" name='name' required ><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Info&nbsp;<input type="number" name='cn' maxlength="10"><br>
+            Gender&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<select name="gender">
+            <option selected disabled>--Select--</option>
+            <option value="Male (M)">--Male--</option>
+            <option value="Female (F)">--Female--</option>
+            <option value="none">Wish not to say</option>
+          </select><br>
+           1) i Lead&nbsp;&nbsp;&nbsp;<input type="number", name='a' min="-5" max="3.1" step="0.000001" required> <br>
+           2) ii Lead&nbsp;&nbsp;<input type="number", name='b' min="-5.5" max="4.6" step="0.000001" required><br>
+           3) iii Lead&nbsp;<input type="number", name='c' min="-4.4" max="4.1" step="0.000001" required><br>
+           4) avr Lead  <input type="number", name='d' min="-3.1" max="4.9" step="0.000001" required><br>
+           5) avl Lead  <input type="number", name='e' min="-3.3" max="3.3" step="0.000001" required><br>
+           6) avf Lead  <input type="number", name='f' min="-4.9" max="3.9" step="0.000001" required><br>
+           7) v1 Lead&nbsp;&nbsp;<input type="number", name='g' min="-2.1" max="3.5" step="0.000001" required><br>
+           8) v2 Lead&nbsp;&nbsp;<input type="number", name='h' min="-2.5" max="4.0" step="0.000001" required><br>
+           9) v3 Lead&nbsp;&nbsp;<input type="number", name='i' min="-2.3" max="4.3" step="0.000001" required><br>
+          10) v4 Lead  <input type="number", name='j' min="-2.3" max="3.7" step="0.000001" required><br>
+          11) v5 Lead  <input type="number", name='k' min="-2.1" max="3.1" step="0.000001" required><br>
+          12) v6 Lead   <input type="number", name='l' min="-4.9" max="3.4" step="0.000001" required><br>
+          13) vx Lead   <input type="number", name='m' min="-4.8" max="2.3" step="0.000001" required><br>
+          14) vy Lead   <input type="number", name='n' min="-4.7" max="3.3" step="0.000001" required><br>
+          15) vz Lead   <input type="number", name='o'min="-2.0" max="1.6" step="0.000001"  required><br>
+       <input class="btn" type="submit" value='PREDICT' formaction="{{url_for('home')}}"></b><br><br>
+       <input class="btn" type="submit" value='PRINT REPORT' formaction="{{url_for('print')}}"></b></center>
+      </form>
+      <form class="exit" action="/go">
+        <input class="btns" type="Submit" value="LogOut">
+        </form>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+PatientID :165200
+s0052lre.dat 16 2000 16  i : -2.2508
+s0052lre.dat 16 2000 16  ii : -4.03558
+s0052lre.dat 16 2000 16  iii : -1.7847
+s0052lre.dat 16 2000 16  avr : 3.143187
+s0052lre.dat 16 2000 16  avl : -0.23315
+s0052lre.dat 16 2000 16  avf : -2.90989
+s0052lre.dat 16 2000 16  v1 : -0.79113
+s0052lre.dat 16 2000 16  v2 : -1.57022
+s0052lre.dat 16 2000 16  v3 : -0.4512
+s0052lre.dat 16 2000 16  v4 : 0.416679
+s0052lre.dat 16 2000 16  v5 : -0.16214
+s0052lre.dat 16 2000 16  v6 : 1.14075
+s0052lre.xyz 16 2000 16  vx : 0.110887
+s0052lre.xyz 16 2000 16  vy : -0.91023
+s0052lre.xyz 16 2000 16  vz : 0.455595
+
+# age: 63
+# sex: male
+# ECG date: 17/11/2007
+
+# Diagnose:
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): infero-lateral
+# Former infarction (localization): Anterior region
+# Result: Myocardial Infraction.
+# Additional diagnoses: Partial stroke patient.
+# Smoker: no
+# Number of coronary vessels involved: 2
+# Infarction date (acute): 13-Nov-2005
+# Previous infarction (1) date: 01-Oct-2005.
+
+

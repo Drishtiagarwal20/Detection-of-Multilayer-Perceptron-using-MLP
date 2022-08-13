@@ -1,0 +1,32 @@
+PatientID :115200
+#Lead Readings
+s0052lre.dat 16 2000 16  i : -1.1508
+s0052lre.dat 16 2000 16  ii : -5.46036
+s0052lre.dat 16 2000 16  iii : -4.30896
+s0052lre.dat 16 2000 16  avr : 3.305307
+s0052lre.dat 16 2000 16  avl : 1.578918
+s0052lre.dat 16 2000 16  avf : -4.8844
+s0052lre.dat 16 2000 16  v1 : 2.408009
+s0052lre.dat 16 2000 16  v2 : 2.127227
+s0052lre.dat 16 2000 16  v3 : 2.168225
+s0052lre.dat 16 2000 16  v4 : 1.787097
+s0052lre.dat 16 2000 16  v5 : 1.886805
+s0052lre.dat 16 2000 16  v6 : 1.796253
+s0052lre.xyz 16 2000 16  vx : 0.215175
+s0052lre.xyz 16 2000 16  vy : -2.77815
+s0052lre.xyz 16 2000 16  vz : -0.06931
+
+# age: 53
+# sex: male
+# ECG date: 17/11/2009
+
+# Diagnose:
+# Reason for admission: Normal health checkup
+# Acute infarction (localization): not detected
+# Former infarction (localization): no
+# Results : No myocardial infraction
+# Additional diagnoses: Hyperuricemia
+# Smoker: no
+# Number of coronary vessels involved: 2
+# Previous infarction (1) date: n/a
+
